@@ -1,0 +1,200 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>knaffles - Front End Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- prettier-ignore -->
+    <svg display="none"version="1.1"xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink"><symbol fill="none"id="icon-email"viewBox="0 0 24 24"><path d="M7 9L12 12.5L17 9"stroke="#ffffff"stroke-width="1.5"stroke-linecap="round"stroke-linejoin="round"fill="none"></path><path d="M2 17V7C2 5.89543 2.89543 5 4 5H20C21.1046 5 22 5.89543 22 7V17C22 18.1046 21.1046 19 20 19H4C2.89543 19 2 18.1046 2 17Z"stroke="#ffffff"stroke-width="1.5"></path></symbol><symbol fill="none"id="icon-linkedin"viewBox="0 0 24 24"><path d="M21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8Z"stroke="#ffffff"stroke-width="1.5"stroke-linecap="round"stroke-linejoin="round"></path><path d="M7 17V13.5V10"stroke="#ffffff"stroke-width="1.5"stroke-linecap="round"stroke-linejoin="round"></path><path d="M11 17V13.75M11 10V13.75M11 13.75C11 10 17 10 17 13.75V17"stroke="#ffffff"stroke-width="1.5"stroke-linecap="round"stroke-linejoin="round"></path><path d="M7 7.01L7.01 6.99889"stroke="#ffffff"stroke-width="1.5"stroke-linecap="round"stroke-linejoin="round"></path></symbol><symbol fill="none"id="icon-phone"viewBox="0 0 24 24"><path d="M18.1182 14.702L14 15.5C11.2183 14.1038 9.5 12.5 8.5 10L9.26995 5.8699L7.81452 2L4.0636 2C2.93605 2 2.04814 2.93178 2.21654 4.04668C2.63695 6.83 3.87653 11.8765 7.5 15.5C11.3052 19.3052 16.7857 20.9564 19.802 21.6127C20.9668 21.8662 22 20.9575 22 19.7655L22 16.1812L18.1182 14.702Z"stroke="#ffffff"stroke-width="1.5"stroke-linecap="round"stroke-linejoin="round"></path></symbol><symbol fill="none"id="icon-drupal"viewBox="0 0 32 32"><path d="M23.545 21.683c-0.085 0.187-0.278 0.497-0.538 0.505-0.463 0.017-0.513-0.221-0.856-0.728-0.754-1.113-7.318-7.974-8.546-9.303-1.081-1.167-0.152-1.99 0.278-2.421 0.539-0.542 2.117-2.117 2.117-2.117 2.409 2.273 4.593 4.727 6.553 7.359l0.106 0.149c0.829 1.138 1.327 2.564 1.327 4.107 0 0.879-0.162 1.721-0.457 2.497l0.016-0.048zM16 28.076c0 0 0 0-0 0-2.177 0-3.941-1.764-3.941-3.941 0-0 0-0.001 0-0.001v0c0.015-0.998 0.384-1.907 0.987-2.61l-0.005 0.006c0.711-0.869 2.958-3.313 2.958-3.313s2.214 2.481 2.954 3.306c0.613 0.68 0.988 1.585 0.988 2.578 0 0.012-0 0.024-0 0.036v-0.002c0 0 0 0.001 0 0.001 0 2.177-1.764 3.941-3.941 3.941 0 0 0 0-0 0v0zM9.411 22.182c-0.703-0.024-3.295-4.493 1.516-9.255l3.182 3.479c0.050 0.049 0.081 0.118 0.081 0.194 0 0.085-0.039 0.161-0.101 0.211l-0.001 0c-1.627 1.531-3.075 3.217-4.333 5.044l-0.068 0.105c-0.082 0.232-0.205 0.225-0.277 0.221zM20.717 7.405c-2.045-1.686-3.653-3.828-4.68-6.274l-0.040-0.107c-1.065 2.553-2.671 4.695-4.687 6.359l-0.027 0.022c-3.162 3.157-6.745 6.739-6.745 12.107 0 0.005 0 0.010 0 0.015 0 6.33 5.131 11.461 11.461 11.461s11.461-5.131 11.461-11.461c0-0.005 0-0.011 0-0.016v0.001c0-5.37-3.583-8.949-6.745-12.107z"stroke="#ffffff"/></symbol>
+    <symbol fill="none"id="icon-github"viewBox="0 0 24 24">
+      <path d="M16 22.0268V19.1568C16.0375 18.68 15.9731 18.2006 15.811 17.7506C15.6489 17.3006 15.3929 16.8902 15.06 16.5468C18.2 16.1968 21.5 15.0068 21.5 9.54679C21.4997 8.15062 20.9627 6.80799 20 5.79679C20.4558 4.5753 20.4236 3.22514 19.91 2.02679C19.91 2.02679 18.73 1.67679 16 3.50679C13.708 2.88561 11.292 2.88561 8.99999 3.50679C6.26999 1.67679 5.08999 2.02679 5.08999 2.02679C4.57636 3.22514 4.54413 4.5753 4.99999 5.79679C4.03011 6.81549 3.49251 8.17026 3.49999 9.57679C3.49999 14.9968 6.79998 16.1868 9.93998 16.5768C9.61098 16.9168 9.35725 17.3222 9.19529 17.7667C9.03334 18.2112 8.96679 18.6849 8.99999 19.1568V22.0268" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9 20.0267C6 20.9999 3.5 20.0267 2 17.0267" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    </symbol>
+    </svg>
+
+    <div class="outer">
+      <div class="inner">
+        <section class="section section--top">
+          <h1>knaffles</h1>
+          <div class="subtitle">Front-End Developer</div>
+          <div class="resume"><a href="resume.pdf">PDF Resume</a></div>
+        </section>
+        <section class="section section--middle">
+          <p>
+            I have been building websites of various shapes and sizes for over
+            15 years. Although my primary focus has been on Drupal front-ends
+            for most of my career, in the last few years I have spent the
+            majority of my time building headless React front-ends.
+          </p>
+          <div class="pills">
+            <span class="pill">HTML</span>
+            <span class="pill">SCSS/CSS</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">Drupal</span>
+            <span class="pill">React</span>
+            <span class="pill">NextJS</span>
+
+            <span class="pill pill--alt1">Web Accesibility</span>
+            <span class="pill pill--alt1">Acquia & Acquia Site Studio</span>
+            <span class="pill pill--alt1">Git & GitHub</span>
+            <span class="pill pill--alt1">Bitbucket</span>
+
+            <span class="pill pill--alt2">JIRA</span>
+            <span class="pill pill--alt2">Confluence</span>
+            <span class="pill pill--alt2">Large Teams</span>
+            <span class="pill pill--alt2">Meeting Deadlines</span>
+            <span class="pill pill--alt2">Meeting Budgets</span>
+          </div>
+        </section>
+        <section class="section section--middle">
+          <h2>Recent Work</h2>
+          <div class="work-entry">
+            <div class="twocol twocol--33-67">
+              <div class="twocol__left border-right">
+                <h3>NextJS eCommerce</h3>
+              </div>
+              <div class="twocol__right">
+                <p>
+                  I worked with a large team in the development of a custom
+                  NextJS front-end for a major US art museum's eCommerce
+                  integrations. I worked directly with the client and our
+                  internal team to help define the scope of the eCommerce
+                  integration, establish epics and timelines in JIRA, and build
+                  and launch the final product.
+                </p>
+                <p>
+                  <a href="https://www.clevelandart.org" class="site-link"
+                    >Visit the site</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="work-entry">
+            <div class="twocol twocol--33-67">
+              <div class="twocol__left border-right">
+                <h3>Gatsby Front-End</h3>
+              </div>
+              <div class="twocol__right">
+                <p>
+                  I contributed to component development for a Gatsby-powereed
+                  headless Drupal implementation.
+                </p>
+                <p>
+                  <a href="https://birdirx.com" class="site-link"
+                    >Visit the site</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="work-entry">
+            <div class="twocol twocol--33-67">
+              <div class="twocol__left border-right">
+                <h3>React + Acquia Site Studio</h3>
+              </div>
+              <div class="twocol__right">
+                <p>
+                  I partnered with a back-end developer and a Drupal architect
+                  to build a site powered partly by Acquia Site Studio (for
+                  marketing content), and partly by a custom React-powered
+                  portal embedded within the site. The portal provided the
+                  ability for users to authenticate and manage their
+                  subscriptions to a medical product.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="work-entry">
+            <div class="twocol twocol--33-67">
+              <div class="twocol__left border-right">
+                <h3>Drupal Base Theme Development</h3>
+              </div>
+              <div class="twocol__right">
+                <p>
+                  I led the development of a "black-and-white" base theme to be
+                  shared across a number of pet food sites hosted in Acquia
+                  Cloud Site Factory, followed by the development of a sub-theme
+                  for specific brands.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="work-entry">
+            <div class="twocol twocol--33-67">
+              <div class="twocol__left border-right">
+                <h3>Privacy Policy with Layout Builder</h3>
+              </div>
+              <div class="twocol__right">
+                <p>
+                  This Drupal site relies heavily on Layout Builder, which at
+                  the time had just been introduced into Drupal core, to provide
+                  a friendly interface for editors to enter highly structured
+                  content. With assistance from our back-end team, I developed
+                  custom functionality to enhance the Layout Builder experience,
+                  consisting of a suite of custom modules designed to be reused
+                  on future projects.
+                </p>
+                <p>
+                  <a
+                    href="https://www.verizon.com/about/privacy/full-privacy-policy"
+                    class="site-link"
+                    >Visit the site</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section section--bottom">
+          <h2>Find Me Here</h2>
+          <ul class="contacts-list">
+            <li class="icon">
+              <a href="https://www.linkedin.com/in/michael-girgis-610b992/">
+                <svg>
+                  <use xlink:href="#icon-linkedin"></use>
+                </svg>
+                LinkedIn
+              </a>
+            </li>
+            <li class="icon">
+              <a href="https://www.drupal.org/u/knaffles">
+                <svg>
+                  <use xlink:href="#icon-drupal"></use>
+                </svg>
+                Drupal
+              </a>
+            </li>
+            <li class="icon">
+              <a href="https://github.com/knaffles">
+                <svg>
+                  <use xlink:href="#icon-github"></use>
+                </svg>
+                Github
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
