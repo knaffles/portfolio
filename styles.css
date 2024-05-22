@@ -13,6 +13,10 @@
   --shade11: #1c3545;
   --shade12: #182d3b;
   --white: #ffffff;
+
+  --primary-font: "Lora", sans-serif;
+  --secondary-font: "Montserrat", sans-serif;
+  --tertiary-font: Courier, monospace;
 }
 
 * {
@@ -22,8 +26,7 @@
 body {
   color: var(--shade12);
   margin: 0;
-  /* font-family: "Nunito Sans", sans-serif; */
-  font-family: "Lora", sans-serif;
+  font-family: var(--primary-font);
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -42,14 +45,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--secondary-font);
   font-optical-sizing: auto;
   font-style: normal;
 }
 
 h1 {
   color: var(--shade9);
-  font-family: Courier, monospace;
+  font-family: var(--tertiary-font);
   font-size: 2.5rem;
   font-weight: 400;
   margin-bottom: 0.15em;
@@ -92,7 +95,7 @@ a {
 }
 
 .subtitle {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--secondary-font);
   font-size: 1.25rem;
 }
 
@@ -170,7 +173,53 @@ a {
   }
 }
 
-/* COMPONENTS */
+/* BUTTONS */
+
+.btn {
+  background-color: var(--white);
+  border: 0;
+  border-radius: 0.5rem;
+  color: var(--shade10);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: var(--secondary-font);
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+
+  &:hover,
+  &:focus {
+    background-color: var(--lightest);
+  }
+}
+
+/* FORMS */
+
+form {
+  margin: 0.5rem 0 2rem;
+
+  p {
+    label {
+      font-family: var(--secondary-font);
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+  }
+}
+
+input[type="text"],
+input[type="email"] {
+  font-family: var(--secondary-font);
+  padding: 0.5rem;
+}
+
+textarea {
+  font-family: var(--secondary-font);
+  padding: 0.5rem;
+  height: 10rem;
+}
+
+/* OTHER COMPONENTS */
 
 .work-entry {
   & + .work-entry {
@@ -207,11 +256,12 @@ a {
 
 .contacts-list {
   display: flex;
+  flex-direction: row;
   gap: 1rem;
+  justify-content: center;
   list-style: none;
-  padding: 0;
   margin: 0;
-  flex-direction: column;
+  padding: 0;
 }
 
 .icon {
